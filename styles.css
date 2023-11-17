@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
 :root {
   --var-clr-body-background-main: #404040;
   --var-clr-navbar-main: #353535;
@@ -88,12 +88,65 @@ button {
   padding: 2rem;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
-.contenido__listas-titulo {
+.contenido__title {
+  font-size: 18px;
+}
+.contenido__lista {
+  font-weight: 400;
   font-size: 16px;
+  margin: 0.5rem 0;
+}
+.bold {
   font-weight: 700;
+}
+/* Lograr el cambio de color a los elementos en mantenimiento */
+.mantenimiento {
+  color: #f26767;
+  text-decoration: line-through;
+}
+/* Segunda Caja de contenido(selector de comida) */
+.select-type {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: var(--var-clr-navbar-main);
+}
+.select-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-title {
+  font-family: 'Courier Prime', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #D9EFFF;
+  padding: .5rem 0;
+  font-weight: 700;
+}
+.contain-selectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.select-container {
+  width: 100%;
+  height: 190px;
+}
+.select-container img {
+  height: 100%;
+  max-width: 700px;
+}
+/* Por ultimo el footer */
+#footer {
+  height: 75px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
