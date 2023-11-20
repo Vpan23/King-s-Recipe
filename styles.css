@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
 :root {
   --var-clr-body-background-main: #404040;
   --var-clr-navbar-main: #353535;
@@ -120,11 +120,11 @@ button {
   align-items: center;
 }
 .select-title {
-  font-family: 'Courier Prime', Arial, Helvetica, sans-serif;
+  font-family: "Courier Prime", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #D9EFFF;
-  padding: .5rem 0;
+  color: #d9efff;
+  padding: 0.5rem 0;
   font-weight: 700;
 }
 .contain-selectors {
@@ -137,10 +137,34 @@ button {
 .select-container {
   width: 100%;
   height: 190px;
+  position: relative;
+}
+.select-contrast {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000a8;
+  color: #fff;
+  font-family: 'Courier Prime', sans-serif;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-container:hover .select-contrast {
+  width: 100%;
 }
 .select-container img {
   height: 100%;
   max-width: 700px;
+}
+.separate {
+  margin: 1rem 0;
+  color: rgb(40, 189, 189);
 }
 /* Por ultimo el footer */
 #footer {
@@ -149,4 +173,36 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+/* Efecto Hover para Select Type */
+.select-title-container:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #284b63;
+}
+.right ul li {
+  font-size: 16px;
+  font-weight: 400;
+}
+.left-select {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.aprender {
+  max-width: 120px;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  
+}
+.aprender:hover {
+  transition: all ease-in-out .6s;
+  color: #4f99cb;
 }

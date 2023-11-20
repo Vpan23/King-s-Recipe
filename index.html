@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>King's Recipe</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/KingsRecipe-Logo.ico" type="image/x-icon">
   </head>
   <body>
     <nav id="navbar">
@@ -30,7 +31,7 @@
     </nav>
     <section class="hero">
       <video class="hero__video" autoplay loop muted>
-        <!-- <source src="./assets/hero-video.mp4" type="video/mp4" /> -->
+        <source src="./assets/hero-video.mp4" type="video/mp4" />
       </video>
       <div class="hero__text-content">
         <h1 class="hero__title">
@@ -43,8 +44,8 @@
       <h1 class="contenido__title">
         Somos una industria especializada en ayudar a nuestros visitantes para
         encontrar el plato preferido, o el plato que comeremos el dia de hoy.
-        Datos que nos caracterizan:
       </h1>
+      <h1 class="contenido__title separate">Datos que nos caracterizan:</h1>
       <ol class="contenido__contenedor-listas">
         <li class="contenido__lista">
           <span class="contenido__listas-titulo bold">Categorización de Recetas:</span> Organiza las recetas en categorías como
@@ -111,17 +112,72 @@
       <div class="contain-selectors">
         <div class="select-container desayuno">
           <img src="./assets/desayuno.jpeg" alt="desayuno">
+          <!-- Crear un contraste al hacer hover en cada opcion -->
+          <div class="select-contrast">
+            <div class="left-select">
+              <h1>Desayunar</h1>
+              <a href="./Type-Sections/desayuno.html" class="aprender">Aprender</a>
+            </div>
+            <div class="right">
+              <ul>
+                <li>Pan</li>
+                <li>Café</li>
+                <li>Pancakes</li>
+                <li>Huevos</li>
+                <li>Avena</li>
+                <li>Cereales</li>
+                <li>etc...</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="select-container almuerzo">
           <img src="./assets/almuerzo.jpeg" alt="almuerzo">
+          <!-- Crear un contraste al hacer hover en cada opcion -->
+          <div class="select-contrast">
+            <div class="left-select">
+              <h1>Almorzar</h1>
+              <a href="./Type-Sections/almuerzo.html" class="aprender">Aprender</a>
+            </div>
+            <div class="right">
+              <ul>
+                <li>Lasaña</li>
+                <li>Pollo</li>
+                <li>Estofados</li>
+                <li>Paella</li>
+                <li>Vegetales</li>
+                <li>Pescados</li>
+                <li>etc...</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="select-container cena">
           <img src="./assets/cena.jpeg" alt="cena">
+          <!-- Crear un contraste al hacer hover en cada opcion -->
+          <div class="select-contrast">
+            <div class="left-select">
+              <h1>Cenar</h1>
+              <a href="./Type-Sections/cena.html" class="aprender">Aprender</a>
+            </div>
+            <div class="right">
+              <ul>
+                <li>Carne</li>
+                <li>Pollo</li>
+                <li>Mariscos</li>
+                <li>Pescados</li>
+                <li>Sushi</li>
+                <li>Vegetales</li>
+                <li>etc...</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <footer id="footer">
       <span>&copy; 2023 King'sRecipe. Todos los derechos reservados.</span>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
