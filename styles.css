@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
 :root {
-  --var-clr-body-background-main: #404040;
-  --var-clr-navbar-main: #353535;
+  --var-clr-body-background-main: #FFF;
+  --var-clr-navbar-main: #9F2836;
+  --var-clr-gray-main: #404040;
 }
 * {
   padding: 0;
@@ -9,7 +10,7 @@
   margin: 0;
 }
 body {
-  background: var(--var-clr-body-background-main);
+  background: var(--var-clr-navbar-main);
 }
 img {
   width: 100%;
@@ -97,6 +98,40 @@ button {
   font-size: 16px;
   margin: 0.5rem 0;
 }
+/* Barra de Lista de contenido */
+.barra-de-contenido {
+  font: 1em sans-serif;
+  font-weight: 700;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+.barra-de-contenido ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.barra-de-contenido .contenido-lista-opt{
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.barra-de-contenido .contenido-lista-opt:hover {
+  transition: .3s ease-in-out all;
+  background: #0000004a;
+  cursor: pointer;
+  color: #284b63;
+  text-decoration: underline;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -112,7 +147,7 @@ button {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background: var(--var-clr-navbar-main);
+  background: var(--var-clr-body-background-main);
 }
 .select-title-container {
   display: flex;
@@ -123,7 +158,7 @@ button {
   font-family: "Courier Prime", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #d9efff;
+  color: #747474;
   padding: 0.5rem 0;
   font-weight: 700;
 }
@@ -205,4 +240,121 @@ button {
 .aprender:hover {
   transition: all ease-in-out .6s;
   color: #4f99cb;
+}
+/* Section de reservar */
+#reservar {
+  background-color: #F26767;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.left-reservar {
+  display: none;
+}
+.right-reservar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content-show-mobile {
+  position: absolute;
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #9f2836b0;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 1rem;
+}
+.content-show-mobile:hover {
+  background-color: #9F2836;
+  transition: 1s ease all;
+}
+.paragraph-reservar {
+  font-size: 12px;
+}
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+#form .form-qst {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+}
+#form .form-qst input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid var(--var-clr-navbar-main);
+  border-radius: .25rem;
+  padding: 0 .5rem;
+}
+.reservar-button {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #F26767;
+}
+.reservar-button:hover {
+  transition: ease .3s all;
+  opacity: .6;
+}
+/* Section mapa */
+#maps {
+  background-color: var(--var-clr-gray-main);
+  color: var(--var-clr-body-background-main);
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  gap: 1rem;
+}
+.imagen-del-mapa {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.imagen-del-mapa .horario {
+  display: flex;
+  position: absolute;
+  background-color: #284b63;
+  width: 100%;
+  height: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.imagen-del-mapa:hover .horario{
+  height: 100%;
+  transition: .3s ease all;
 }
