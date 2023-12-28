@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 :root {
   --var-clr-body-background-main: #FFF;
   --var-clr-navbar-main: #9F2836;
@@ -47,7 +48,12 @@ button {
   right: 0;
   background: none;
   border: none;
-  margin: 0 1rem;
+  margin-right: 1rem;
+  padding: .25rem;
+}
+.btn__menu svg:hover path{
+  transition: all ease .3s;
+  fill: #000;
 }
 .hero {
   display: flex;
@@ -112,7 +118,7 @@ button {
   height: 50px;
 }
 .barra-de-contenido ul {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -221,14 +227,12 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  
 }
 .aprender {
   max-width: 120px;
   background: none;
   color: #fff;
   font-weight: 700;
-  
 }
 .aprender:hover {
   transition: all ease-in-out .6s;
@@ -237,13 +241,15 @@ button {
 /* Section de reservar */
 #reservar {
   background-color: #F26767;
-  
   font-size: small;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+#reservar h1 {
+  margin: 1rem 0;
 }
 .left-reservar {
   display: none;
@@ -398,6 +404,8 @@ button {
 }
 .work-email {
   color: var(--var-clr-cian-primaty);
+  overflow: hidden;
+
 }
 /* Por ultimo el footer */
 #footer {
@@ -452,7 +460,7 @@ button {
   padding: .25rem;
 }
 .facebook:hover {
-  background-color: #3b5998;
+  background-color: #1e53c5;
 }
 .instagram:hover {
   background-color: #E1306C;
@@ -462,4 +470,9 @@ button {
 }
 .small {
   font-size: 12px;
+}
+@media screen and (min-width: 470px) {
+  .barra-de-contenido ul {
+    display: flex;
+  }
 }
