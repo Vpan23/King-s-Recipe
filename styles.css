@@ -15,6 +15,7 @@
 body {
   background: var(--var-clr-navbar-main);
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 img {
   width: 100%;
@@ -50,6 +51,7 @@ button {
   border: none;
   margin-right: 1rem;
   padding: .25rem;
+  z-index: 1000;
 }
 .btn__menu svg:hover path{
   transition: all ease .3s;
@@ -466,13 +468,66 @@ button {
   background-color: #E1306C;
 }
 .youtube:hover {
-  background-color: #FF0000;
+  background-color: #d41212;
 }
 .small {
   font-size: 12px;
+}
+/* lista oculta del navbar */
+.hidden-content {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 320px;
+  background-color: #9F2836;
+  height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all ease-in-out .3s;
+}
+.hidden-content li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+.hidden-content li a {
+  text-decoration: none;
+  color: var(--var-clr-cian-primaty);
+}
+.navbar-hidden-list {
+  margin-top: 2rem;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  width: 80%;
+}
+.navbar-hidden-list li:hover {
+  background-color: var(--var-clr-red-secondary);
+  transition: all ease .3s;
+}
+.separador {
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #000;
 }
 @media screen and (min-width: 470px) {
   .barra-de-contenido ul {
     display: flex;
   }
+}
+@media screen and (min-width: 470px) and (max-width: 899px) {
+}
+@media screen and (min-width: 900px) {
 }
