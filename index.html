@@ -47,6 +47,18 @@
           </svg>
         </button>
       </div>
+      <!-- Navbar de PC -->
+      <div class="desktop-navbar">
+        <div class="logo__contain">
+          <img src="./assets/KingsRecipe Logo.png" alt="Logo King's Recipe" />
+        </div>
+        <h1 class="title-navbar">KING`S RECIPES</h1>
+        <ul class="list-nabvar">
+          <li class="nav-list">Desayuno</li>
+          <li class="nav-list">Almuerzo</li>
+          <li class="nav-list">Cena</li>
+        </ul>
+      </div>
     </nav>
     <section class="hero">
       <video class="hero__video" autoplay loop muted>
@@ -71,9 +83,10 @@
       <h1 class="contenido__title">
         Somos una industria especializada en ayudar a nuestros visitantes para
         encontrar el plato preferido, o el plato que comeremos el dia de hoy.
+        <span class="no-mostrar-mobile">Datos que nos caracterizan:</span>
       </h1>
       <h1 class="contenido__title separate">Datos que nos caracterizan:</h1>
-      <ol class="contenido__contenedor-listas">
+      <ul class="contenido__contenedor-listas">
         <li class="contenido__lista">
           <span class="contenido__listas-titulo bold"
             >Categorización de Recetas:</span
@@ -120,6 +133,7 @@
           Incluye fotografías de alta calidad de cada receta para inspirar a los
           usuarios y ayudarles a visualizar el resultado final.
         </li>
+        <!-- Separado -->
         <li class="contenido__lista">
           <span class="contenido__listas-titulo bold">Consejos y Trucos:</span>
           Ofrece consejos, trucos de cocina o sugerencias personalizadas para
@@ -156,7 +170,7 @@
           hacer un seguimiento de puntos acumulados y recibir recomendaciones
           personalizadas para una experiencia más interactiva y personalizada.
         </li>
-      </ol>
+      </ul>
     </section>
     <section class="select-type">
       <div class="select-title-container">
@@ -236,14 +250,66 @@
       <h1>RESERVA UNA MESA</h1>
       <div class="sides-reservar">
         <div class="left-reservar">
-          <form action="">
-            <h2>Información Personal</h2>
-            <label for=""
-              >Indique su Nombre:
-              <input type="text" name="" id="" />
-            </label>
-          </form>
-          <button class="btn-reservar">reservar</button>
+          <div class="content-show">
+            <h1>Información Personal</h1>
+            <!-- Insertar Inputs -->
+            <form action="" id="form">
+              <div class="form-qst">
+                <label for="nombre">Nombre: </label>
+                <input
+                  type="name"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Nombre a reservar"
+                />
+              </div>
+              <div class="form-qst">
+                <label for="nombre">Correo: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@example.com"
+                />
+              </div>
+              <div class="form-qst">
+                <label for="tel">Tel: </label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                  placeholder="(+507) 6000-0000"
+                  required
+                />
+              </div>
+              <div class="form-qst">
+                <label for="nombre">Número de Personas: </label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  max="32"
+                  min="1"
+                  placeholder="1"
+                />
+              </div>
+              <div class="form-qst">
+                <label for="fecha-hora">Fecha y hora: </label>
+                <input
+                  type="datetime-local"
+                  id="fecha-hora"
+                  name="fecha-hora"
+                  required
+                />
+              </div>
+            </form>
+            <button class="reservar-button-desktop">reservar</button>
+            <p class="paragraph-reservar">
+              Por favor, complete los siguientes campos para garantizar una
+              gestión eficiente y segura de la información.
+            </p>
+          </div>
         </div>
         <div class="right-reservar">
           <div class="content-show-mobile">
@@ -306,7 +372,7 @@
               gestión eficiente y segura de la información.
             </p>
           </div>
-          <img src="./assets/reservar.png" alt="" />
+          <img src="./assets/reservar.png" alt="" class="img-reservar"/>
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
 :root {
-  --var-clr-body-background-main: #FFF;
-  --var-clr-navbar-main: #9F2836;
+  --var-clr-body-background-main: #fff;
+  --var-clr-navbar-main: #9f2836;
   --var-clr-gray-main: #404040;
-  --var-clr-red-secondary: #560C02;
-  --var-clr-cian-primaty: #D9EFFF;
+  --var-clr-red-secondary: #560c02;
+  --var-clr-cian-primaty: #d9efff;
 }
 * {
   padding: 0;
@@ -40,6 +40,9 @@ button {
   width: 100%;
   height: 100%;
 }
+.desktop-navbar {
+  display: none;
+}
 .logo__contain {
   width: 62px;
   height: 53.794px;
@@ -50,11 +53,11 @@ button {
   background: none;
   border: none;
   margin-right: 1rem;
-  padding: .25rem;
+  padding: 0.25rem;
   z-index: 1000;
 }
-.btn__menu svg:hover path{
-  transition: all ease .3s;
+.btn__menu svg:hover path {
+  transition: all ease 0.3s;
   fill: #000;
 }
 .hero {
@@ -99,7 +102,6 @@ button {
 .contenido {
   padding: 2rem;
   color: #fff;
-  
 }
 .contenido__title {
   font-size: 18px;
@@ -113,7 +115,7 @@ button {
 .barra-de-contenido {
   font: 1em sans-serif;
   font-weight: 700;
-  background: #FFF;
+  background: #fff;
   display: flex;
   align-items: center;
   width: 100%;
@@ -126,7 +128,7 @@ button {
   width: 100%;
   height: 100%;
 }
-.barra-de-contenido .contenido-lista-opt{
+.barra-de-contenido .contenido-lista-opt {
   list-style: none;
   display: flex;
   height: 100%;
@@ -136,7 +138,7 @@ button {
   text-align: center;
 }
 .barra-de-contenido .contenido-lista-opt:hover {
-  transition: .3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
   background: #0000004a;
   cursor: pointer;
   color: #284b63;
@@ -164,6 +166,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .select-title {
   font-family: "Courier Prime", Arial, Helvetica, sans-serif;
@@ -192,7 +195,7 @@ button {
   align-items: center;
   background: #000000a8;
   color: #fff;
-  font-family: 'Courier Prime', sans-serif;
+  font-family: "Courier Prime", sans-serif;
   top: 0;
   right: 0;
   width: 0%;
@@ -237,12 +240,12 @@ button {
   font-weight: 700;
 }
 .aprender:hover {
-  transition: all ease-in-out .6s;
+  transition: all ease-in-out 0.6s;
   color: #4fcb51;
 }
 /* Section de reservar */
 #reservar {
-  background-color: #F26767;
+  background-color: #f26767;
   font-size: small;
   color: #fff;
   display: flex;
@@ -279,7 +282,7 @@ button {
   gap: 1rem;
 }
 .content-show-mobile:hover {
-  background-color: #9F2836;
+  background-color: #9f2836;
   transition: 1s ease all;
 }
 .paragraph-reservar {
@@ -305,8 +308,8 @@ button {
   width: 100%;
   height: 32px;
   border: 1px solid var(--var-clr-navbar-main);
-  border-radius: .25rem;
-  padding: 0 .5rem;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
 }
 .reservar-button {
   width: 80%;
@@ -315,18 +318,18 @@ button {
   border: 2px solid #fff;
   text-transform: uppercase;
   font-weight: 600;
-  color: #FFF;
-  background-color: #F26767;
+  color: #fff;
+  background-color: #f26767;
 }
 .reservar-button:hover {
-  transition: ease .3s all;
-  opacity: .6;
+  transition: ease 0.3s all;
+  opacity: 0.6;
 }
 /* Section mapa */
 #maps {
   background-color: var(--var-clr-gray-main);
   color: var(--var-clr-body-background-main);
-  
+
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -354,11 +357,10 @@ button {
   align-items: center;
   font-weight: bold;
   text-align: center;
-  
 }
-.imagen-del-mapa:hover .horario{
+.imagen-del-mapa:hover .horario {
   height: 100%;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 #trabajo {
   background-color: var(--var-clr-red-secondary);
@@ -394,9 +396,9 @@ button {
 }
 .pasar-cursor:hover .marco-de-requisitos {
   width: 100%;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   background-color: var(--var-clr-navbar-main);
-  opacity: .8;
+  opacity: 0.8;
 }
 .marco-de-requisitos .trabajo-list {
   text-align: center;
@@ -408,7 +410,6 @@ button {
 .work-email {
   color: var(--var-clr-cian-primaty);
   overflow: hidden;
-
 }
 /* Por ultimo el footer */
 #footer {
@@ -429,7 +430,7 @@ button {
   text-align: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 .redes-sociales {
   margin: 1rem 0;
@@ -441,7 +442,7 @@ button {
   border: 1px solid #000;
   border-radius: 15px;
   background-size: cover;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 .social-media-list a {
   display: flex;
@@ -460,13 +461,13 @@ button {
   scale: 1.1;
 }
 .facebook {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 .facebook:hover {
   background-color: #1e53c5;
 }
 .instagram:hover {
-  background-color: #E1306C;
+  background-color: #e1306c;
 }
 .youtube:hover {
   background-color: #d41212;
@@ -481,7 +482,7 @@ button {
   top: 0;
   right: 0;
   width: 0;
-  background-color: #9F2836;
+  background-color: #9f2836;
   height: 100vh;
   z-index: 100;
   justify-content: center;
@@ -489,7 +490,7 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 2rem;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 .hidden-content li {
   list-style: none;
@@ -515,7 +516,7 @@ button {
 }
 .navbar-hidden-list li:hover {
   background-color: var(--var-clr-red-secondary);
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .separador {
   position: absolute;
@@ -523,19 +524,136 @@ button {
   height: 2px;
   background-color: #fff;
 }
-@media screen and (min-width: 470px) {
+.no-mostrar-mobile {
+  display: none;
+}
+@media screen and (min-width: 470px) and (max-width: 699px) {
   .barra-de-contenido ul {
     display: flex;
   }
-}
-@media screen and (min-width: 470px) and (max-width: 699px) {
-
-}
-@media screen and (min-width: 700px) {
   .contain-selectors {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) {
+  .contenido {
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .barra-de-contenido ul {
+    display: flex;
+  }
+  .contain-selectors {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+  .desktop-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .title-navbar {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 32px;
+    font-weight: lighter;
+    color: #fff;
+  }
+  .list-nabvar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+  }
+  .nav-list {
+    list-style: none;
+    color: #fff;
+  }
+  .no-mostrar-mobile {
+    display: inline;
+  }
+  .separate {
+    display: none;
+  }
+  .contenido__contenedor-listas {
+    column-count: 2;
+    text-align: start;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  .contenido__lista {
+    break-inside: avoid; 
+  }
+
+  #reservar {
+    padding: 1rem 2rem 2rem 1rem;
+  }
+  .sides-reservar {
+    display: flex;    
+    gap: 3.5rem;
+  }
+  .left-reservar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-reservar .content-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    max-width: 500px;
+  }
+  .left-reservar .content-show input {
+    max-width: 400px;
+  }
+  .left-reservar .form-qst {
+    max-width: 400px;
+  }
+  .left-reservar
+  .right-reservar .img-reservar {
+    height: 600px;
+    max-height: 600px;
+  }
+  .reservar-button-desktop {
+    width: 300px;
+    max-width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--var-clr-navbar-main);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .reservar-button-desktop:hover {
+    background-color: var(--var-clr-red-secondary);
+    transition: all ease .5s;
+    font-size: 17px;
+  }
+  .content-show-mobile {
+    display: none;
   }
 }
