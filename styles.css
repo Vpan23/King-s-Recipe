@@ -249,6 +249,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 #reservar h1 {
   margin: 1rem 0;
@@ -479,7 +480,7 @@ button {
   display: flex;
   top: 0;
   right: 0;
-  width: 320px;
+  width: 0;
   background-color: #9F2836;
   height: 100vh;
   z-index: 100;
@@ -520,14 +521,21 @@ button {
   position: absolute;
   width: 80%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
 }
 @media screen and (min-width: 470px) {
   .barra-de-contenido ul {
     display: flex;
   }
 }
-@media screen and (min-width: 470px) and (max-width: 899px) {
+@media screen and (min-width: 470px) and (max-width: 699px) {
+
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
+  .contain-selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+  }
 }

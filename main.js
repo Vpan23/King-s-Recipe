@@ -1,7 +1,7 @@
 const btnNavbar = document.querySelector(".btn__menu");
 const hiddenContent = document.querySelector(".hidden-content");
 
-let activador = true;
+let activador = false;
 btnNavbar.addEventListener("click", (e) => {
   console.log("funciona");
   if (activador) {
